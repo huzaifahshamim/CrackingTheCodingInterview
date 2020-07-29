@@ -42,4 +42,19 @@ def OneAway(string1, string2):
         bigger_char.remove(chars[0])
         return ''.join(bigger_char) == smaller_str
 
+ans1 = OneAway('pale','ple')
+print(ans1)
+
+ans2 = OneAway('pales', 'pale')
+print(ans2)
+
+ans3 = OneAway('pale','bale')
+print(ans3)
+
+ans4 = OneAway('pale','bae')
+print(ans4)
+
+ans4 = OneAway('sale','sael')
+print(ans4)
+
 
