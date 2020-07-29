@@ -17,6 +17,18 @@ def URLify(str1, true_length):
     return back_to_str
 
 
+""""
+Since we are using appending to a list. TC will be O(true_length) + O(len(modified)) due to the .join. The length of
+modified will be larger than true_length. 
+Time Complexity: O(len(modified))
+"""
+
+"""
+Using a list and appending values to it.
+Space Complexity: ~O(n)
+"""
+
+
 ans1 = URLify('Mr John Smith        ', 13)
 print(ans1)
 
