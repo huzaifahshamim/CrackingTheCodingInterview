@@ -15,5 +15,9 @@ def CheckPermutation(str1, str2):
             str1d[char] += 1
         else:
             str1d[char] += 1
-        if str2[char] in str2d
+        if str2[char] in str2d:
+            str2d[char] += 1
+        else:
+            str2d[char] += 1
+    return str1d == str2d
 
