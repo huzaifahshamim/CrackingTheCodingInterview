@@ -42,6 +42,15 @@ def OneAway(string1, string2):
         bigger_char.remove(chars[0])
         return ''.join(bigger_char) == smaller_str
 
+""""
+Time Complexity: O(n) since going through strings multiple times
+"""
+
+"""
+Space Complexity: ~O(n) as we have new lists and appending to them 
+"""
+
+
 ans1 = OneAway('pale','ple')
 print(ans1)
 
