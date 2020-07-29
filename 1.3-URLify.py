@@ -15,3 +15,16 @@ def URLify(str1, true_length):
             modified.append(str1[place])
     back_to_str = ''.join(modified)
     return back_to_str
+
+
+ans1 = URLify('Mr John Smith        ', 13)
+print(ans1)
+
+ans2 = URLify('what is popp in', 15)
+print(ans2)
+
+ans3 = URLify('hello ', 6)
+print(ans3)
+
+ans4 = URLify(' DOG', 4)
+print(ans4)
