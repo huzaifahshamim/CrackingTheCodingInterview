@@ -10,18 +10,19 @@ def StringCompression(string1):
     compressed = []
     repeat = 1
     for char in range(len(string1) - 1):
-        if string1[char] == string1[char+1]:
+        if string1[char] == string1[char + 1]:
             repeat += 1
         else:
             compressed.append(string1[char])
             compressed.append((str(repeat)))
             repeat = 1
-        last_char = string1[char+1]
+        last_char = string1[char + 1]
     compressed.append(last_char)
     compressed.append(str(repeat))
     if len(''.join(compressed)) < len(string1):
         return ''.join(compressed)
     return string1
+
 
 """"
 Time Complexity: O(n) since going through strings 
@@ -30,7 +31,6 @@ Time Complexity: O(n) since going through strings
 """
 Space Complexity: O(n) as we are appending to a list
 """
-
 
 ans1 = StringCompression('aabcccccaaa')
 print(ans1)

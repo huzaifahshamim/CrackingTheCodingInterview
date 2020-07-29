@@ -30,6 +30,15 @@ def ZeroMatrix(matrix):
     return matrix
 
 
+""""
+Time Complexity: O(n) since going through strings 
+"""
+
+"""
+Space Complexity: O(n) as we are appending to a list
+"""
+
+
 matrix1 = [[1, 2, 3, 4, 5],
            [6, 7, 8, 9, 10],
            [11, 12, 13, 14, 15],
