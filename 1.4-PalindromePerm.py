@@ -13,14 +13,33 @@ def PalindromePerm(str1):
             occurences[char] += 1
         else:
             occurences[char] = 1
-    if len(str1) % 2 == 0:
+
+    true_length = len(str1)
+    if ' ' in occurences:
+        true_length = len(str1) - occurences[' ']
+        del occurences[' ']
+
+    if true_length % 2 == 0:
         for letter in occurences:
             if occurences[letter] % 2 != 0:
                 return False
-            else:
-                return True
+        return True
+
     OddsAllowed = 1
     for lett in occurences:
         if occurences[lett] % 2 != 0:
             OddsAllowed = OddsAllowed - 1
-    return OddsAllowed < 0
+    return OddsAllowed >= 0
+
+
+ans1 = PalindromePerm('tact coa')
+print(ans1)
+
+ans2 = PalindromePerm('what is popp in')
+print(ans2)
+
+ans3 = PalindromePerm('hello ')
+print(ans3)
+
+ans4 = PalindromePerm('aboba')
+print(ans4)
