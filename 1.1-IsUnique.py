@@ -12,3 +12,17 @@ def IsUnique(string):
         else:
             characters[letter] = True
     return True
+
+
+ans1 = IsUnique('abcdg')
+print(ans1)
+
+ans2 = IsUnique('a1234567890g1h')
+print(ans2)
+
+ans3 = IsUnique('124390')
+print(ans3)
+
+ans4 = IsUnique('abcdipkha')
+print(ans4)
+
