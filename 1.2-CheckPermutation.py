@@ -23,6 +23,18 @@ def CheckPermutation(str1, str2):
     return str1d == str2d
 
 
+""""
+Assume that the length of the strings are equal n. Then in the worst case, we go through each letter in string, or O(n).
+We then compare the dictionaries which is also O(n). O(n) + O(n) = O(2n) but constants get dropped.
+Time Complexity: O(n)
+"""
+
+"""
+Adding a dictionary, and at worse case we would have to input n letters.
+Space Complexity: O(n)
+"""
+
+
 ans1 = CheckPermutation('abcdefg', 'Gdcba')
 print(ans1)
 
