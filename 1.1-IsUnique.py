@@ -13,6 +13,15 @@ def IsUnique(string):
             characters[letter] = True
     return True
 
+""""
+Assume length of string is n. Then in the worst case, we go through each letter in string, or O(n)
+Time Complexity: O(n)
+"""
+
+"""
+Adding a dictionary, and at worse case we would have to input n letters.
+Space Complexity: O(n)
+"""
 
 ans1 = IsUnique('abcdg')
 print(ans1)
