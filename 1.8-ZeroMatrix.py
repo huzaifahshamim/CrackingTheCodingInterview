@@ -35,7 +35,7 @@ Time Complexity: O(n) since going through strings
 """
 
 """
-Space Complexity: O(n) as we are appending to a list
+Space Complexity: O(m) or O(n) as we are appending to a list and depedning on which one is bigger
 """
 
 
