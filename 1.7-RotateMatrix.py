@@ -7,7 +7,8 @@ bytes, write a method to rotate the image by 90 degrees. Can you do this in plac
 def RotateMatrix(matrix):
     n = len(matrix)
     for layer in range(n):
-        for cell in range(n):
+        print("THIS IS LAYER", layer)
+        for cell in range(layer, n-1 -layer):
             tl = matrix[layer][cell + layer]
             print(tl)
             tr = matrix[cell + layer][n - 1 - layer]
@@ -36,7 +37,7 @@ matrix1 = [[1, 2, 3, 4, 5],
 ans1 = RotateMatrix(matrix1)
 print(ans1)
 
-ans2 = RotateMatrix('abcdefghhgfedcba')
+'''ans2 = RotateMatrix('abcdefghhgfedcba')
 print(ans2)
 
 ans3 = RotateMatrix('asasss')
@@ -44,3 +45,4 @@ print(ans3)
 
 ans4 = RotateMatrix('bccabe')
 print(ans4)
+'''
