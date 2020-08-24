@@ -1,2 +1,2 @@
-# CrackingTheCodingInterview
- Practice Problems from "Cracking The Coding Interview"
+# CodingQuestions to Increase Skills
+ Practice Problems to Improve Coding Skills
